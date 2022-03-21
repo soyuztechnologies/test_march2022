@@ -4,6 +4,7 @@
             <Toolbar>
                 <ToolbarSpacer></ToolbarSpacer>
                 <Button icon="sap-icon://filter" press="onFilter"></Button>
+                <Button icon="sap-icon://add" press="onAddColumn"></Button>
             </Toolbar>
         </headerToolbar>
         <columns>

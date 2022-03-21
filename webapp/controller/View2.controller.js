@@ -17,6 +17,13 @@ sap.ui.define([
             //whenever route change, call my function herculis
             this.oRouter.getRoute("detail").attachMatched(this.herculis, this);
         },
+        onAddColumn: function(){
+            var oColumn = new sap.m.Column({
+                header: new sap.m.Text({text: "Wow"})
+            });
+            var oTable = this.getView().byId("idTab");
+            oTable.addColumn(oColumn);
+        },
         herculis: function(oEvent){
             var fruitId = oEvent.getParameter("arguments").fruitId;
             var sPath = '/' + fruitId;
